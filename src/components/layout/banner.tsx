@@ -1,3 +1,4 @@
+// /src/components/Banner.tsx
 "use client";
 
 import React from 'react';
@@ -54,4 +55,3 @@ const Banner: React.FC = () => {
 };
 
 export default Banner;
-  
