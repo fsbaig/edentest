@@ -2,11 +2,7 @@ import { Menu } from "lucide-react";
 import { ShoppingCart, Search, Truck } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon from react-icons
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
   return (
@@ -15,7 +11,6 @@ export default function Header() {
       <div>
         <h2 className="font-bold text-2xl text-black">edenrobe</h2>
       </div>
-
       {/* Center Section: Nav buttons */}
       <ul className="hidden md:flex items-center space-x-8 text-lg font-semibold">
         <li>
@@ -51,7 +46,6 @@ export default function Header() {
           <Link href="/" className="hover:text-gray-600">Fragrance</Link>
         </li>
       </ul>
-
       {/* Right Section: Icons */}
       <div className="flex items-center space-x-4">
         <Link href="/" className="hover:text-gray-600">
@@ -68,7 +62,6 @@ export default function Header() {
           <FaWhatsapp className="w-6 h-6 text-green-500" />
         </Link>
       </div>
-
       {/* Mobile Menu Trigger */}
       <Sheet>
         <SheetTrigger className="md:hidden">
