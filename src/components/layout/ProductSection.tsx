@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const products = [
   { name: 'ALLURE LAWN', image: '/allurelawn.webp' },
@@ -28,10 +28,12 @@ const ProductSection: React.FC = () => {
             className="relative group overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out"
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-[400px] object-cover transition-opacity duration-300 group-hover:opacity-80"
+              layout="fill"
+              objectFit="cover"
+              className="transition-opacity duration-300 group-hover:opacity-80"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-lg font-bold">
               <span>{product.name}</span>
@@ -50,10 +52,12 @@ const ProductSection: React.FC = () => {
             className="relative group overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out"
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-[400px] object-cover transition-opacity duration-300 group-hover:opacity-80"
+              layout="fill"
+              objectFit="cover"
+              className="transition-opacity duration-300 group-hover:opacity-80"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-lg font-bold">
               <span>{product.name}</span>
@@ -72,10 +76,12 @@ const ProductSection: React.FC = () => {
             className="relative group overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out"
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-[400px] object-cover transition-opacity duration-300 group-hover:opacity-80"
+              layout="fill"
+              objectFit="cover"
+              className="transition-opacity duration-300 group-hover:opacity-80"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-lg font-bold">
               <span>{product.name}</span>

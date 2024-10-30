@@ -7,7 +7,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Banner: React.FC = () => {
   const settings = {
@@ -32,23 +32,29 @@ const Banner: React.FC = () => {
     <div className="relative w-full h-[400px] sm:h-[800px] overflow-hidden">
       <Slider {...settings}>
         <div>
-          <img
+          <Image
             src="/banner1.webp"
             alt="Banner 1"
+            layout="fill"
+            objectFit="cover"
             className="w-full h-full object-cover"
           />
         </div>
         <div>
-          <img
+          <Image
             src="/banner2.webp"
             alt="Banner 2"
+            layout="fill"
+            objectFit="cover"
             className="w-full h-full object-cover"
           />
         </div>
         <div>
-          <img
+          <Image
             src="/banner3.webp"
             alt="Banner 3"
+            layout="fill"
+            objectFit="cover"
             className="w-full h-full object-cover"
           />
         </div>
